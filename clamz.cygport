@@ -1,6 +1,6 @@
 NAME="clamz"
 VERSION=0.5
-RELEASE=1
+RELEASE=2
 CATEGORY="Web"
 SUMMARY="Downloads MP3s from Amazon's music store"
 DESCRIPTION="Clamz is a little command-line program to download MP3 files
@@ -11,4 +11,4 @@ purchased from Amazon."
 HOMEPAGE="https://code.google.com/p/clamz/"
 SRC_URI="https://clamz.googlecode.com/files/clamz-${VERSION}.tar.gz"
 
-CYGCONF_ARGS="UPDATE_DESKTOP_DATABASE=: UPDATE_MIME_DATABASE=:"
+CYGCONF_ARGS="UPDATE_DESKTOP_DATABASE=: UPDATE_MIME_DATABASE=: LIBGCRYPT_LIBS=-lgcrypt"
